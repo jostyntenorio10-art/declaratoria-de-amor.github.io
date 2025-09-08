@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo - Código Romántico 💖</title>
+    <link rel="stylesheet" href="romantic-heart-css.css">
+</head>
+<body>
+    <div class="sparkles" id="sparkles"></div>
+    
+    <div class="container">
+        <div class="instructions">¡Haz clic en el corazón con todo tu amor! 💕</div>
+        
+        <div class="heart-container" id="heartContainer">
+            <div class="heart-shape">
+                <div class="heart-left-lobe"></div>
+                <div class="heart-right-lobe"></div>
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <div class="click-counter">
+            <span id="clickCount">0</span> / 20 clics de amor
+        </div>
+    </div>
+
+    <!-- Audio element - COLOCA AQUÍ TU ARCHIVO DE AUDIO -->
+    <audio id="loveAudio" preload="auto">
+        <source src="lost in the fire.mp3" type="audio/mpeg">
+        <source src="lost in the fire.ogg" type="audio/ogg">
+        <!-- Fallback para navegadores que no soporten los formatos anteriores -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="love-card" id="loveCard">
+        <button class="close-btn" id="closeBtn">×</button>
+        <h2>Te amo 💖</h2>
+        <div class="bouquet"></div>
+        <div class="love-message">
+            Mi amor, cada clic que diste representa un latido de mi corazón por ti. 
+            Eres la razón por la que mis días tienen color, por la que sonrío sin darme cuenta, 
+            por la que creo en los cuentos de hadas. Tu amor es la melodía más hermosa que 
+            ha llegado a mi vida. ¡Te dedico esta canción con todo mi corazón! 🌹✨
+        </div>
+        <div class="audio-container">
+            <button class="play-button" id="playButton">
+                🎵 ¡Te Dedico esta Canción!
+            </button>
+            <div class="audio-status" id="audioStatus"></div>
+        </div>
+    </div>
+
+    <script src="romantic-heart-js.js"></script>
+</body>
+</html>
